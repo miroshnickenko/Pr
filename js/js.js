@@ -80,3 +80,66 @@ function writeYourGenres () {
 
 writeYourGenres ();
 
+
+const options = {
+    name: 'test',
+
+};
+
+// delete options.name;
+
+console.log(options);
+
+
+let arr = [1, 2, 344, 44, 442, 4224];
+
+// arr.forEach(function(item, i, arr){
+//     console.log(`индекс ${i} содержит значение ${item} в массиве ${arr}`);
+
+// });
+
+arr.filter();
+
+
+const object = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    
+};
+
+
+console.log(object); 
+
+// for ( let key in object) {
+//     console.log(`Это ключ ${key}`);
+// }
+
+// for ( let key in object) {
+//     console.log(`Это значение ключа ${object[key]}`);
+// }
+
+for ( let key in object ) {
+    if (typeof(object[key]) === 'object'){
+        for ( let i in object[key]){
+            console.log(`Свойство ${i} имеет значение ${object[key][i]}`); 
+        }
+    } else{
+        console.log(`Свойство ${key} имеет значение ${object[key]}`);
+    }
+}
+
+// for ( let key in object ) {
+//     if (typeof(object[key]) !== 'object') {
+//         console.log(`Свойство ${key} имеет значение ${object[key]}`);
+        
+//     } else{
+//         for ( let i in object[key]){
+//             console.log(`Свойство ${i} имеет значение ${object[key][i]}`); 
+//         }
+//     }
+// }
